@@ -6,9 +6,10 @@
   font-weight: 900;
   src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtzpbCIPrQ.ttf) format('truetype');
 }
+
 body {
-  background-color: #dcdfdf;
-  overflow-x: hidden;
+  background-color: #a1b9ee;
+  overflow: hidden;
   padding-top: 5px;
   cursor: pointer;
 }
@@ -63,6 +64,7 @@ body {
 .inner--2 {
   z-index: 2;
 }
+
 .text {
   font-size: 6vw;
   line-height: 0.78;
@@ -418,4 +420,87 @@ p.text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #fff;
+}
+
+#corner{
+  z-index: 5;
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Montserrat' , sans-serif;
+  position: absolute;
+  bottom: 0;
+  padding-left: 20px;
+}
+
+#corner-1{
+  z-index: 4;
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Montserrat' , sans-serif;
+  position: absolute;
+  bottom: 0;
+  padding-left: 150px;
+}
+
+#corner-2{
+  z-index: 5;
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Montserrat' , sans-serif;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
+
+input {
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 18px;   /* if that’s what you want... */
+  line-height: 1.4;  /* somewhat excessive */
+  background-color: transparent;
+  z-index: 8;
+  outline: 0;
+  border-width: 0 0 0.5px;
+  border-color: white;
+}
+input:focus {
+  border-color: white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+.arrow {
+  color: white;
+  background-color: transparent;
+  margin: 0em 0;
+}
+.arrow::after {
+  size: 30px;
+  font-size: 30px;
+  display: inline-block;
+  padding-left: 0px;
+  content: "\0279E";
+  -webkit-transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.arrow:hover {
+  color: #fff;
+  background-color: transparent;
+}
+.arrow:hover::after {
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
 }

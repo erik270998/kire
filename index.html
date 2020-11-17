@@ -2,6 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodePen - Landing page concept</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -11,9 +12,13 @@
 <body>
 <!-- partial:index.partial.html -->
 <div class="outer">
-	<nav class="navbar navbar-light bg-transparent">
-		<span class="navbar-brand mx-0 h1" id="logo">Kire</span>
-	</nav>
+	<nav class="navbar navbar-light bg-transparent justify-content-between">
+		<span class="navbar-brand" id="logo">Kire</span>
+		<form class="form-inline">
+			<input class="mr-sm-2 text-white" style="padding-left: justify-left;" target="_blank" placeholder="Email me at launch" type="text" />
+			<a class="arrow" style="z-index: 10;"></a>
+		</form>
+	  </nav>
 	<div class="inner inner--1">
 		<div class="orb orb--1"></div>
 		<div class="orb orb--2"></div>
@@ -29,25 +34,25 @@
 		<div class="orb orb--5"></div>
 	</div>
 	<h1 class="text text--1">
-		<div class="text-center">
-			<img src="image.png" height="400px" alt="" srcset="">
-		</div>
 		<strong class="slice slice--1">The first</strong>
 		<strong class="slice slice--2">biodegradable </strong>
 		<span class="slice slice--3">razor</span>
 	</h1>
 	<h2 class="text text--2">
-		<span class="slice slice--4">Customer</span>
-		<strong class="slice slice--5">Connections </strong>
-		<span class="slice slice--6">In The <strong>Cloud</strong></span>
+		<span class="slice slice--4"><img src="image.png" height="500px" alt=""></span>
 	</h2>
 	<p class="text text--3">
-		<span class="slice slice--7">Handle your <strong>Voice,</strong></span>
-		<span class="slice slice--8"><strong>Emails, SMS</strong> and <strong>Chat</strong></span>
-		<span class="slice slice--9">from anywhere using</span>
+		<span class="slice slice--7">made out of <strong>PHA,</strong></span>
+		<span class="slice slice--8"><strong>Hemp</strong> and <strong>Corn.</strong></span>
+		<span class="slice slice--9">Compostable and</span>
 		<span class="slice slice--10">our <strong>cloud</strong> platform</span>
 	</p>
+	<a href="faq.html" id="corner"><h1>FAQ</h1></a>
+	<a href="" id="corner-1"><h1>@SHAVEKIRE</h1></a>
+	<a href="" id="corner-2"><h1>CONTACT US</h1></a>
 </div>	
+
+
 
 
 
